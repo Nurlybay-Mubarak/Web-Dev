@@ -1,0 +1,124 @@
+
+body {
+    display: flex;
+    margin: 0;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #f0f2f5;
+    text-align: center;
+}
+
+.page {
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    
+    display:flex;
+    align-items: flex-start;
+    gap: 60px;
+    background-color: lightgray;
+    padding: 90px;
+    border-radius: 6px;
+}
+
+#facebook {
+    text-align: left;
+
+    color:blue;
+    font-style: normal;
+}
+
+
+
+.text p {
+    text-align: left;
+}
+
+.field {
+    display: flex;
+    width: 300px;
+    height: 40px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+    color:white;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.forgetpass{
+    text-decoration: none;
+    color:blue;
+}
+
+
+
+.new_account {
+    cursor: pointer;
+    border: none;
+    width: 200px;
+    height: 40px;
+    border-radius: 4px;
+    color:white;
+    background-color: green;
+}
+
+.white_block {
+    background-color: white;
+    padding: 15px;
+    
+    border-radius: 6px;
+    box-shadow: 0 2px 8px gray;
+
+}
+
+
+.new_page {
+    font-size: small;
+}
+
+.new_page_href {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+.new_page_href:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    font-size: 12px;
+    color: #737373;
+    padding: 20px 40px;
+}
+
+.footer-langs,
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:12px;
+    margin-bottom: 12px;
+}
+
+.footer-copy {
+    margin-top: 10px;
+    font-size: 11px;
+    color: #8a8d91;
+}
