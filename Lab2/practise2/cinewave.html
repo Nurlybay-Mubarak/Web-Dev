@@ -1,0 +1,210 @@
+<!doctype html>
+<head>
+    <meta charset="UTF-8">
+    <title>CineWave — Stream Anytime</title>
+    <style>
+        #header {
+            background-color: #1a1a2e;
+            color: white;
+        }
+
+        #nav ul{
+            text-decoration: none;
+            display: flex;
+            justify-content: flex-end;
+
+            gap:10px;
+            padding: 25px;
+        }
+
+        #nav li {
+            text-decoration: none;
+        }
+
+
+        #nav a {
+            color: black;
+        }
+        #nav a:hover {
+            color: red;
+
+        }
+
+
+        #form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #8a8d91;
+        }
+
+        #form input {
+            width: 300px;
+            border-radius: 10px;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        #form button {
+            border-radius: 10px;
+            background-color: red;
+
+        }
+        #form button:hover {
+            background-color: green;
+        }
+
+        #movies {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .movie-card {
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px #1a1a2e;
+
+        }
+
+        .movie img {
+            width: 100%;
+
+        }
+
+        #pricing {
+            display: flex;
+            justify-content: center;
+            gap:50px;
+        }
+
+        .plan-card{
+            width: 30%;
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .plan-card.standard{
+            border: 3px solid lightblue;
+            font-family: "Agency FB";
+        }
+
+        .plan-card h3{
+            font-weight: bold;
+            color: aqua;
+        }
+
+        .plan-card button{
+            border-radius: 10px;
+
+        }
+
+        .plan-card button:hover {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <h1>CineWave</h1>
+        <nav>
+            <ul>
+                <li><a href="">Home</a> </li>
+                <li><a href="">Movies</a></li>
+                <li><a href="">Pricing</a></li>
+                <li><a href="">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h2>Unlimited Movies, Anytime, Anywhere"</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consequatur incidunt, labore non quidem rerum. Aspernatur atque eos expedita hic ipsum quia sit! Ab animi architecto fugiat magnam provident suscipit.
+            </p>
+            <form>
+                <label></label>
+                <input type="email" placeholder="Enter your email">
+                <label></label>
+                <input type="password" placeholder="Create your password">
+                <button>Get Started</button>
+            </form>
+        </section>
+        <section id="movies">
+            <div class="movie-card">
+                <img src="https://via.placeholder.com/200x280" >
+                <h3>Batman</h3>
+                <span class="genre"></span>
+            </div>
+            <div class="movie-card">
+                <img src="https://via.placeholder.com/200x280" >
+                <h3>Spiderman</h3>
+                <span class="genre"></span>
+            </div>
+            <div class="movie-card">
+                <img src="https://via.placeholder.com/200x280" >
+                <h3>Halk</h3>
+                <span class="genre"></span>
+            </div>
+            <div class="movie-card">
+                <img src="https://via.placeholder.com/200x280" >
+                <h3>Fight club</h3>
+                <span class="genre"></span>
+            </div>
+            <div class="movie-card">
+                <img src="https://via.placeholder.com/200x280" >
+                <h3>Titanic</h3>
+                <span class="genre"></span>
+            </div>
+            <div class="movie-card">
+                <img src="https://via.placeholder.com/200x280" >
+                <h3>Idiot</h3>
+                <span class="genre"></span>
+            </div>
+
+
+        </section>
+
+        <section id="pricing">
+            <h2>Choose your plan</h2>
+            <div class="plan-card">
+                <h3>Basic</h3>
+                <p class="price">
+                    1,500 ₸/month
+                </p>
+                <ul>
+                    <li> SD quality</li>
+                    <li>1 device</li>
+                    <li> limited library </li>
+                </ul>
+                <button>Subscibe</button>
+            </div>
+            <div class="plan-card standard">
+
+                <h3>Standard</h3>
+                <p class="price">
+                    2,500 ₸/month
+                </p>
+                <ul>
+                    <li> HD quality</li>
+                    <li>2 device</li>
+                    <li> full library </li>
+                </ul>
+                <button>Subscibe</button>
+            </div>
+            <div class="plan-card">
+                <h3>Premium</h3>
+                <p class="price">
+                    4,000 ₸/month
+                </p>
+                <ul>
+                    <li> 4K quality</li>
+                    <li>4 device</li>
+                    <li> full library </li>
+                </ul>
+                <button>Subscibe</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
